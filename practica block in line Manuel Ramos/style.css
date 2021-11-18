@@ -5,18 +5,16 @@ div {
   margin: 5px;
 }
 
-#media{
-  display: flex;
-  place-content: flex-start flex-end;
+  
+#articulo {
+    background-color: yellow;
+    margin: 1em 0;
+    
 
-    background-color: orange;
-    margin: 0.5em;
-    border: 1px;
 }
 
-
 #publicidad {
-  flex-grow: 1;
+  
   background-color: yellow;
     margin-top: 1em;
 
@@ -63,7 +61,10 @@ img {
   background-image: url("images/turnstile.jpg");
   height: 350px;
 }
-
+#lateral{
+    margin: 0.5em;
+    border: 1px;
+}
 #contenido{
     margin: 0.5em 0.5m 0.5m 0.5m;
     border: 1px;
@@ -80,15 +81,6 @@ img {
 #contenido #secundario{
     margin: 0.5em;
 }
-
-#articulo {
-  flex-grow: 1;
-    background-color: yellow;
-    margin: 1em 0;
-    
-
-}
-
 #pie {
   border: 2px solid rgb(0, 0, 0);
 }
@@ -98,42 +90,24 @@ img {
 #menu {
   clear: both;
 }
-#medio {
-  display: flex;
- 
-
+#lateral {
   float: left;
   width: 18%;
 }
 #contenido {
-  display: flex;
-  place-content: flex-start flex-end;
-
   float: left;
   width: 79%;
   background-color: orange;
 }
-
-#noticias{
-  background-color: palegreen;
-}
-#principal {
-  background-color: palegreen;
+#contenido #principal {
   float: left;
   width: 78%;
  
 }
-#secundario {
-  display: flex;
+#contenido #secundario {
   background-color: yellow;
   float: right;
   width: 18%;
-}
-
-#terciario {
-  flex-wrap: wrap;
-  background-color: rgb(255, 0, 200);
-  
 }
 #pie {
     margin-top: 1em;
