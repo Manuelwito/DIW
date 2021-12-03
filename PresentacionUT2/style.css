@@ -3,17 +3,8 @@ div {
   padding: 0, 5m 0;
   border: 1px solid rgb(20, 9, 9);
   margin: 5px;
+  
 }
-
-#media{
-  display: flex;
-  place-content: flex-start flex-end;
-
-    background-color: orange;
-    margin: 0.5em;
-    border: 1px;
-}
-
 
 #publicidad {
   flex-grow: 1;
@@ -45,7 +36,6 @@ img {
 #contenedor {
   width: 90%;
   max-width: 1200px;
-
   margin: 0 auto;
 }
 #cabecera {
@@ -54,7 +44,11 @@ img {
 }
 #menu {
     margin: 0.5em 0.5em;
-
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    clear: both;
+    
     
 } 
 .imagenPortada{
@@ -82,10 +76,8 @@ img {
 }
 
 #articulo {
-  flex-grow: 1;
     background-color: yellow;
     margin: 1em 0;
-    
 
 }
 
@@ -95,47 +87,53 @@ img {
 #cabecera {
   clear: both;
 }
-#menu {
-  clear: both;
-}
-#medio {
-  display: flex;
- 
 
-  float: left;
-  width: 18%;
-}
 #contenido {
   display: flex;
+  justify-content: space-around;
   place-content: flex-start flex-end;
-
-  float: left;
+  
   width: 79%;
   background-color: orange;
 }
 
-#noticias{
-  background-color: palegreen;
-}
-#principal {
-  background-color: palegreen;
-  float: left;
-  width: 78%;
- 
-}
-#secundario {
+#medio {
   display: flex;
-  background-color: yellow;
-  float: right;
+  align-content: center;
+  justify-content: space-around;
+
+  float: left;
   width: 18%;
+  background-color: rgb(73, 73, 71);
 }
+  #noticias{
+  
+    background-color: palegreen;
+  }
+  #principal {
+    
+    background-color: palegreen;
+   
+    width: 78%;
+  
+  }
+  #secundario {
+    background-color: yellow;
+  
+    width: 18%;
+  }
 
 #terciario {
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-content:flex-end;
+  
   background-color: rgb(255, 0, 200);
   
 }
 #pie {
+    display: flex;
+    align-items: flex-end;
     margin-top: 1em;
     clear: both;
 }
