@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#a1").fadeToggle();
+        $("#a2").fadeToggle();
+        $("#a3").fadeToggle();
+        $("#a4").fadeToggle();
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+    .vertical-menu {
+      width: 200px;
+      clear: both;
+      display: block;
+    }
+
+    .vertical-menu a {
+      background-color: #eee;
+      color: black;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+      background-color: #f7a000;
+      color: white;
+      width: 150px;
+    }
+
+    .header {
+      background-color: beige;
+      padding: 15px;
+    }
+
+    .contenido1 {
+      background-color: beige;
+
+    }
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+
+    /* For desktop: */
+      
+      .vertical-menu {width: 25%;}
+      
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class="vertical-menu"] {
+          width: 100%;
+        }
+      }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="header">
+    <h1>TITULO DE LA PAGINA</h1>
+  </div>
+  <h1>Vertical Menu</h1>
+  <div class="vertical-menu">
+    <button><a href="#" class="active">Menu</a></button>
+    <a id="a1" href="#">Link 1</a>
+    <a id="a2" href="#">Link 2</a>
+    <a id="a3" href="#">Link 3</a>
+    <a id="a4" ref="#">Link 4</a>
+  </div>
+  <div class="contenido1">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates reprehenderit laborum, eaque,
+      repellendus libero necessitatibus sint quae animi sequi, placeat sit ex. Ipsum unde neque, maiores expedita modi
+      architecto.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates reprehenderit laborum, eaque,
+      repellendus libero necessitatibus sint quae animi sequi, placeat sit ex. Ipsum unde neque, maiores expedita modi
+      architecto.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates reprehenderit laborum, eaque,
+      repellendus libero necessitatibus sint quae animi sequi, placeat sit ex. Ipsum unde neque, maiores expedita modi
+      architecto.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates reprehenderit laborum, eaque,
+      repellendus libero necessitatibus sint quae animi sequi, placeat sit ex. Ipsum unde neque, maiores expedita modi
+      architecto.</p>
+  </div>
+  <div class="footer">
+    <p>Resize the browser window to see how the content respond to the resizing.</p>
+  </div>
+</body>
+
+</html>

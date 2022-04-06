@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Div que cambie de posición y de tamaño al hacer click.
+        //Añade que ese div pueda cambiar de posición y de tamaño de forma aleatoria a través de la pantalla con cada click.
+        //Añade una variable contador y muéstrala en pantalla el número de veces que hacemos click en el div.
+
+        $(document).ready(function () {
+            $(".div1").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "#cccccc");;
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "#2196F3");
+                }
+            });
+            
+        });
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".div1").animate({
+                    left: '250px'
+                });
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="divbutton"><button>Mover</button></div>
+        <div class="div1">1</div>
+
+    </div>
+
+</body>
+
+</html>
