@@ -1,0 +1,74 @@
+
+img{
+  height:  200px;
+  width: auto;
+}
+body{
+
+}
+
+p{
+    margin: 8px;
+}
+
+.menu{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-container{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 400px auto auto 400px;
+    grid-template-rows: repeat(20, 200px);
+    gap: 1px;
+}
+
+.grid-container > *{
+    background-color: rgb(255, 99, 71);
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+   text-align: center;
+  grid-auto-flow: row;
+  border: 1px solid black;
+  padding: 50px;
+
+   
+}
+
+.portada_imagen{
+    background-image: url(../ud3_recu_grid_mediaquerys/images/lollapallooza.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  
+    text-align:start;
+    grid-column: 1/5;
+    grid-row: 2/5;
+}
+
+
+.noticiaizq{
+    grid-column: 1/3;
+   grid-auto-flow: column;
+    
+}
+.noticiadrc{
+    grid-column: 3/5;
+ 
+    
+}
+
+.contenido1{
+ 
+}
+
+.footer{
+    grid-column: 1/5;
+ 
+}
