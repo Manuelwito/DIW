@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.balon {
+  background-color: hsl(hue, saturation, lightness);
+  padding: 20px;
+  font-size: 30px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  
+}
+@keyframes rotate {
+
+    from { transform:rotate(0deg);}
+    to { transform:rotate(359deg);}
+    
+    }
+
+.divbutton {
+  background-color: rgba(228, 117, 117, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

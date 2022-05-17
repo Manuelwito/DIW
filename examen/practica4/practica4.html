@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".balon").animate({
+                    left: '1200px'
+                }),
+                function () {
+                $(".balon").css("animation-name: rotate; animation-duration: 8s;animation-iteration-count: infinite}");
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>Realiza cada ejercicio en un único archivo HTML. Las instrucciones CSS dentro de la etiqueta <style></style> en
+        el HTML.
+
+
+
+        - Animacion mediante CSS (no jQuery) de una pelota que vaya rodando de izquierda a derecha de la pantalla. El
+        activador puede ser un botón, imagen, fontawesome...lo que quieras. Puedes usar jQuery sólo para activar la
+        animación.
+    </p>
+    <div class="container">
+        <div class="div1">
+            <img class="balon" src="images/balon2.png">
+        </div>
+        <div class="divbutton"><button>Mover</button></div>
+    </div>
+</body>
+
+</html>

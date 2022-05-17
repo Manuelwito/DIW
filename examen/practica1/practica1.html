@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        function randomIntFromInterval(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+
+        $(document).ready(function () {
+            $(".div1").on({
+                click: function () {
+                    var hue = randomIntFromInterval(0, 360);
+                    var sat = randomIntFromInterval(0, 100);
+                    var val = randomIntFromInterval(0, 100); 
+                    $(this).css("background-color", "hsl("+hue+", "+sat+"%, "+val+"%)");;
+                },
+
+            });
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>
+        Muestra en pantalla un cuadrado que cambie a un color aleatorio cada vez que se pulse
+        dentro de él. Para el color, debes usar el modelo de color HSL.
+    </p>
+    <div class="container">
+        <div class="div1">
+            Click aquí
+        </div>
+    </div>
+</body>
+
+</html>
