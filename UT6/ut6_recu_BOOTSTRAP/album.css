@@ -69,6 +69,9 @@
   --bs-highlight-bg: #fff3cd;
 }
   
+body{
+  background-color: lightcoral;
+}
   
   .jumbotron {
     padding-top: var(--jumbotron-padding-y);
@@ -109,5 +112,7 @@
   }
   
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+  
   
   

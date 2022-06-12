@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.container{
+
+    background-color: white;
+    height: 100vh;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.divbutton{
+    background-color: rgba(228, 117, 117, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+ 
+
+}
+
+
+

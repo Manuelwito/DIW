@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Selecciona 10 canciones que te gusten y descárgalas desde internet. Descarga una imagen característica de cada una de las canciones.
+
+        /*Crea una lista de las canciones donde aparezca la imagen, nombre de la canción y el autor (o grupo).
+
+        La imagen debe ser un circulo (border-radius:50%).
+
+        Dentro de cada canción, tendremos dos elementos (boton, imagen,fontawesome, etc). 
+        
+        El botón like cambiará el fondo de la canción de forma permanente. El boton dislike agregará un efecto y dejará la canción con una opacidad de 0.3
+
+        Al hacer click en una imagen, ésta empezará a girar y se mostrará el reproductor en la parte inferior, comenzando a reproducirse la música.
+        Al mismo tiempo que se reproduce una canción, muestra la letra de la misma y que haga scroll de forma automática.
+        
+        Puedes inspirarte en el diseño de Jamendo para la lista de canciones.*/
+
+        $(function () {
+            $("#imag").click(function () {
+                alert("funcion reproducir");
+
+                var rotateDegrees = 0;
+                $(this).css("transform", "rotate(" + rotateDegrees + "deg)");
+            });
+        });
+
+        $(function () {
+            $("#like").click(function () {
+                $(this.parentNode).css("background-color", "green");;
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <ul>
+                <li id="cancion1">
+                    <img src="images/blackpumas.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>
+                    Black Pumas
+                </li>
+                <li id="cancion2">
+                    <img src="images/anniebsweet.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>
+                    Annie Bsweet
+                </li>
+                <li id="cancion3">
+                    <img src="images/kora.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Kora
+                </li>
+                <li id="cancion4"> <img src="images/southchild.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Southchild
+                </li>
+                <li id="cancion5"> <img src="images/stick.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Stick to your Guns
+                </li>
+                <li id="cancion6"> <img src="images/portada.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Cancion 6
+                </li>
+                <li id="cancion7"> <img src="images/turnstile.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Cancion 7
+                </li>
+                <li id="cancion8"> <img src="images/fischer.tropsch_18.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Cancion 8
+                </li>
+                <li id="cancion9"> <img src="images/lollapallooza.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Cancion 9
+                </li>
+                <li id="cancion10"> <img src="images/blackpumas.jpg" id="imag">
+                    <button id="like">Like</button>
+                    <button id="dislike">Dislike</button>Cancion 10
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
